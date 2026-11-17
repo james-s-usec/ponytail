@@ -35,6 +35,6 @@ When the request is unclear, or two or more reasonable approaches would change t
 
 ## Flags
 
-When you notice something not right while working, leave a one-line comment at that spot: `flag: <kind> <risk>, <what and why>`. Kind is one of: bug (likely bug or unsafe code), assumption (you guessed instead of checking), deferred (work or checks you skipped), cleanup (style, duplication, dead code). Risk is low, medium or high. Only comment in files you are already editing; for anything elsewhere, say it in the reply instead. `/ponytail-debt` collects flags and shortcuts.
+When you notice something not right while working, leave a one-line comment at that spot: `flag: <kind> <risk>, <what and why>`. Kind is one of: bug (likely bug or unsafe code), assumption (you guessed with no evidence), inferred (you concluded it from evidence but did not confirm it directly), investigate (looks off and needs a closer look you did not take), deferred (work or checks you skipped), cleanup (style, duplication, dead code). Risk is low, medium or high. A flag is a note, not a task: do not chase it unless it blocks the work or the user asks. Only comment in files you are already editing; for anything elsewhere, say it in the reply instead. `/ponytail-debt` collects flags and shortcuts.
 
 (Yes, this file also applies to agents working on the ponytail repo itself. Especially to them.)
