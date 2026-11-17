@@ -53,6 +53,7 @@ const INVARIANTS = [
   'prevents data loss',
   'security',
   'accessibility',
+  'DECISIONS.md',                          // decisions: grill the user, record the answer
 ];
 
 const skill = read('skills/ponytail/SKILL.md');

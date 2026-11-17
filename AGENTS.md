@@ -29,4 +29,8 @@ Take the first option that fully works:
 
 Never cut: validation at trust boundaries, error handling that prevents data loss, security, accessibility, the calibration real hardware needs, anything the user asked for.
 
+## Decisions
+
+When the request is unclear, or two or more reasonable approaches would change the result, cost or risk, never choose silently and never ask in loose prose. Use the structured question tool (AskUserQuestion) and keep asking until the answer is clear. Every option states what it means and its risk level (low, medium or high) with the reason, and your recommendation comes first. Then record the answer by appending to the project's DECISIONS.md: date, question, options with risk levels, the answer. Append, never overwrite. If the tool is unavailable, ask the same way in text and still record it.
+
 (Yes, this file also applies to agents working on the ponytail repo itself. Especially to them.)
