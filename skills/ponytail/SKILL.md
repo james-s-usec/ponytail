@@ -47,6 +47,6 @@ Never cut: validation at trust boundaries, error handling that prevents data los
 
 | Level | Behavior |
 |-------|----------|
-| **lite** | Build what was asked. Name the smaller option in one line and let the user pick. |
+| **lite** | Build what was asked. If a smaller option exists, pick the best one and say which and why in one line. Ask the user only when the choice is truly theirs, with clear options and your recommendation first. |
 | **full** | The rules above. Default. |
 | **ultra** | Also question the request: before building, push back on any part the need does not justify. |
