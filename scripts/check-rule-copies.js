@@ -54,6 +54,7 @@ const INVARIANTS = [
   'security',
   'accessibility',
   'DECISIONS.md',                          // decisions: grill the user, record the answer
+  'flag: <kind> <risk>',                   // flags: inline comment for bugs, assumptions, deferred work, cleanup
 ];
 
 const skill = read('skills/ponytail/SKILL.md');

@@ -75,7 +75,11 @@ function getFallbackInstructions(mode) {
     "\n" +
     "## Decisions\n" +
     "\n" +
-    "When the request is unclear, or two or more reasonable approaches would change the result, cost or risk, never choose silently and never ask in loose prose. Use the structured question tool (AskUserQuestion) and keep asking until the answer is clear. Every option states what it means and its risk level (low, medium or high) with the reason, and your recommendation comes first. Then record the answer by appending to the project's DECISIONS.md: date, question, options with risk levels, the answer. Append, never overwrite. If the tool is unavailable, ask the same way in text and still record it.\n";
+    "When the request is unclear, or two or more reasonable approaches would change the result, cost or risk, never choose silently and never ask in loose prose. Use the structured question tool (AskUserQuestion) and keep asking until the answer is clear. Every option states what it means and its risk level (low, medium or high) with the reason, and your recommendation comes first. Then record the answer by appending to the project's DECISIONS.md: date, question, options with risk levels, the answer. Append, never overwrite. If the tool is unavailable, ask the same way in text and still record it.\n" +
+    "\n" +
+    "## Flags\n" +
+    "\n" +
+    "When you notice something not right while working, leave a one-line comment at that spot: `flag: <kind> <risk>, <what and why>`. Kind is one of: bug (likely bug or unsafe code), assumption (you guessed instead of checking), deferred (work or checks you skipped), cleanup (style, duplication, dead code). Risk is low, medium or high. Only comment in files you are already editing; for anything elsewhere, say it in the reply instead. `/ponytail-debt` collects flags and shortcuts.\n";
 }
 
 function getPonytailInstructions(mode) {

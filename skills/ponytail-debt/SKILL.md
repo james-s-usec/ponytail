@@ -15,7 +15,7 @@ can't quietly become permanent.
 Grep the repo for comment markers, skipping `.git` and everything the
 `.gitignore` files ignore (dependencies, build output, caches, in any stack):
 
-`git grep --no-index --exclude-standard -nE '(#|//|/[*]) ?(shortcut|ponytail):'`  (add other comment prefixes if your stack uses them)
+`git grep --no-index --exclude-standard -nE '(#|//|/[*]) ?(shortcut|ponytail|flag):'`  (add other comment prefixes if your stack uses them)
 
 If the user names their own marker word (`/ponytail-debt TODO`), grep for that word instead.
 
@@ -35,6 +35,8 @@ and the trigger straight from the comment. Want an owner per row too? add
 
 Flag the rot risk: any marker comment that names no upgrade path or
 trigger gets a `no-trigger` tag, those are the ones that silently rot.
+
+Rows for `flag:` comments read `<file>:<line>, <kind> <risk>: <what and why>`, listed after the shortcut rows, high risk first. A flag with no kind or risk gets a `malformed` tag.
 
 End with `<N> markers, <M> with no trigger.` Nothing found: `No shortcut debt. Clean ledger.`
 
